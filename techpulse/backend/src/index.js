@@ -9,7 +9,7 @@ const E = process.env;
 const db = new PrismaClient();
 const app = express();
 
-const PORT = E.BACKEND_PORT || 4000;
+const PORT = E.PORT || E.BACKEND_PORT || 4000;
 const APP_URL = E.APP_URL || 'http://localhost:3000';
 
 app.use(express.json());
